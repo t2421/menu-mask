@@ -44,8 +44,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
     function updateMaskItem(){
         $('.is-current').removeClass('is-current')
         $("#"+currentId).addClass("is-current");
-        $("#menu-rect--prev").attr('data-id',Number(currentId)-1)
         $("#menu-rect--current").attr('data-id',Number(currentId))
-        $("#menu-rect--next").attr('data-id',Number(currentId)+1)
+
+        //ちらつき対応
+        setTimeout(()=>{
+            $("#menu-rect--prev").attr('data-id',Number(currentId)-1)
+            $("#menu-rect--next").attr('data-id',Number(currentId)+1)
+        },10)
+       
     }
 });
