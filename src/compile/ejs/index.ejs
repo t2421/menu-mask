@@ -1,0 +1,23 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title>Frontend</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    it works
+    キャッシュ対策のためのhash <%= hash %>
+    <%- include('./partial/_button',{text:"myButton"}); %>
+    
+    <% if(isProduction){ %>
+        productionビルドの場合だけ表示
+    <% }else{ %>
+        devの場合だけ表示
+    <% } %>
+    <script src="/scripts/bundle.js?v=<%= hash %>"></script>
+</body>
+
+</html>
