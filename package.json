@@ -9,7 +9,7 @@
     "build": "gulp build",
     "dev": "gulp dev",
     "option": "gulp createOptions",
-    "copy":"gulp copy"
+    "copy": "gulp copy"
   },
   "keywords": [],
   "author": "",
@@ -38,5 +38,8 @@
     "webpack-merge": "^4.2.1",
     "webpack-stream": "^5.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gsap": "^3.2.6",
+    "jquery": "^3.5.0"
+  }
 }

@@ -2,21 +2,21 @@
 <html class="no-js" lang="">
 <head>
   <meta charset="utf-8">
-  <title>Frontend</title>
+  <title>Menu</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/styles/style.css">
 </head>
 
 <body>
-    it works
-    キャッシュ対策のためのhash <%= hash %>
-    <%- include('./partial/_button',{text:"myButton"}); %>
-    
-    <% if(isProduction){ %>
-        productionビルドの場合だけ表示
-    <% }else{ %>
-        devの場合だけ表示
-    <% } %>
+    <div class="section" id="section-1"></div>
+    <div class="section" id="section-2"></div>
+    <div class="section" id="section-3"></div>
+    <div id="menu-rect" class="menu-rect-container">
+        <div class="menu-rect" id="menu-rect--1" data-id="section-1">MENU</div>
+        <div class="menu-rect" id="menu-rect--2" data-id="section-2">MENU</div>
+        <div class="menu-rect" id="menu-rect--3" data-id="section-3">MENU</div>
+    </div>
     <script src="/scripts/bundle.js?v=<%= hash %>"></script>
 </body>
 

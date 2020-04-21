@@ -27,5 +27,5 @@ gulp.task("sass:build",()=>{
 })
 
 gulp.task('sass:watch', function () {
-    gulp.watch(config.watch.css, gulp.task('sass'));
+    gulp.watch(config.watch.css, gulp.series('sass','browser-reload'));
 });
