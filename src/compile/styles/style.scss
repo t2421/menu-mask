@@ -9,6 +9,9 @@
   #section-2{
       background-color: #000;
   }
+  #section-4{
+    background-color: #f00;
+}
 
   #menu-rect{
       width: 100px;
@@ -30,20 +33,34 @@
       vertical-align: middle;
       overflow: hidden;
   }
-  #menu-rect--1{
-    z-index: 3;
+  .menu-rect[data-id="1"]{
+  
     background-color: #000;
     color: #fff;
   }
-  #menu-rect--2{
-    z-index: 2;
+  .menu-rect[data-id="2"]{
+ 
     background-color: #fff;    
     color: #000;
 }
-#menu-rect--3{
-    z-index: 1;
+.menu-rect[data-id="3"]{
+
   background-color: #000;
   color: #fff;
+}
+.menu-rect[data-id="4"]{
+
+    background-color: #fff;
+    color: #000;
+  }
+#menu-rect--prev{
+    z-index: 3;
+}
+#menu-rect--current{
+    z-index: 2;
+}
+#menu-rect--next{
+    z-index: 1;
 }
 .menu-rect-container{
 
